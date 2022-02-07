@@ -1,8 +1,8 @@
 .bl1 {
-    background-image: url(images/radio.jpg);
+    background-image: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url(images/img2up.jpg);
     background-position: center;
-    background-size: 1200px 800px;
-    height: 500px;
+    background-size: cover;
+    height: 600px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -12,24 +12,24 @@
 .vlozh1 {
     height: 85%;
     width: 800px;
-    background-color: rgba(51, 42, 35, 0.808);
+    background-color: rgba(51, 42, 35, 0);
     opacity: 0.8;
     border: inherit;
     border-radius: 20px;
     text-align: center;
     box-sizing: border-box;
-    padding-top: 10px;
+    padding-top: 120px;
     padding-bottom: 0px;
-    color: lavender;
+    color: rgb(250, 245, 230);
     font-family: 'Comforter', cursive;
     margin-top: 25px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
 }
 
 .menu {
-    background-color: rgba(51, 42, 35, 0.808);
+    background-color: rgba(51, 42, 35, 0.664);
     height: 5%;
     width: 100%;
     display: flex;
@@ -62,21 +62,24 @@ a:visited {
 }
 
 a:hover {
-    color: #83103c;
+    color: #ac6913e5;
     text-decoration: none;
 }
 
 p {
     text-align: center;
-    color: lavender;
+    color: rgba(187, 118, 53, 0.911);
     font-weight: 400;
-    font-size: 23px;
+    font-size: 20px;
+    font-style: italic;
+    text-align: left;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-top: 20px;
 }
 
 h1 {
     font-weight: 500;
-    font-size: 120px;
+    font-size: 140px;
     margin-bottom: 50px;
 }
 
@@ -89,7 +92,7 @@ h3 {
 }
 
 h4 {
-    font-weight: 500;
+    font-family: 'Times New Roman', Times, serif;
     font-size: 40px;
     margin-bottom: -700px;
     padding-top: 15px;
@@ -147,7 +150,7 @@ li {
     border: 2px solid rgb(19, 24, 19);
     box-shadow: 0 0 7px #666;
     height: 80%;
-    margin: 20px;
+    margin: 10px;
 }
 
 .imgg {
@@ -179,7 +182,7 @@ li {
 }
 
 .uni:hover {
-    background: #6655a5;
+    background: #c56e1c
 }
 
 p2 {
@@ -262,6 +265,11 @@ ol {
     align-items: flex-start;
 }
 
+.work:hover {
+    transform: scale(1.1);
+    transition: 1s;
+}
+
 p3 {
     color: black;
     text-align: center;
@@ -314,7 +322,7 @@ p3 {
     width: 50%;
     border-radius: 10px;
     background-color: rgb(193, 173, 216);
-    margin-top: 20px;
+    margin-top: 40px;
     text-align: left;
     display: flex;
     flex-direction: row;
@@ -337,4 +345,23 @@ span.icon {
     text-align: center;
     padding-top: 10px;
     padding-left: 10px;
+}
+
+.title {
+    transform: translateX(0);
+    animation-name: header_anim;
+    animation-duration: 1.2s;
+    animation-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    text-transform: none;
+    color: #fff;
+    align-self: center;
+}
+
+@keyframes header_anim {
+    from {
+        transform: translateX(-120%);
+    }
+    to {
+        transform: translateX(0);
+    }
 }
